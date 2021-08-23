@@ -7,14 +7,6 @@ class AlumnoService:
     def __init__(self):
         self.repository = AlumnoRepository()
 
-    @property
-    def repository(self):
-        return self.__repository
-
-    @repository.setter
-    def repository(self, value: AlumnoRepository):
-        self.__repository = value
-
     def findAll(self):
         return self.repository.findAll()
 

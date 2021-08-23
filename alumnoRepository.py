@@ -8,22 +8,6 @@ class AlumnoRepository:
         self.alumnoId = 0
         self.read()
 
-    @property
-    def alumnos(self):
-        return self.__alumnos
-
-    @alumnos.setter
-    def alumnos(self, value):
-        self.__alumnos = value
-
-    @property
-    def alumnoId(self):
-        return self.__alumnoId
-
-    @alumnoId.setter
-    def alumnoId(self, value):
-        self.__alumnoId = value
-
     def findAll(self):
         return list(self.alumnos.values())
 

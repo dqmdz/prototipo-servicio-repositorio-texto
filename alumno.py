@@ -5,30 +5,6 @@ class Alumno:
         self.nombre = nombre
         self.apellido = apellido
 
-    @property
-    def alumnoId(self):
-        return self.__alumnoId
-
-    @alumnoId.setter
-    def alumnoId(self, value):
-        self.__alumnoId = value
-
-    @property
-    def nombre(self):
-        return self.__nombre
-
-    @nombre.setter
-    def nombre(self, value):
-        self.__nombre = value
-
-    @property
-    def apellido(self):
-        return self.__apellido
-
-    @apellido.setter
-    def apellido(self, value):
-        self.__apellido = value
-
     def __repr__(self):
         return '{} - {}, {}'.format(self.alumnoId, self.apellido, self.nombre)
 
